@@ -1,0 +1,42 @@
+{
+  "name": "chatux",
+  "version": "1.1.0",
+  "description": "",
+  "main": "dist/chatux.min.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "startr": "set NODE_ENV=test&&webpack-dev-server --config webpack.config.js --mode production",
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "set NODE_ENV=test&&webpack --config webpack.config.js --mode production"
+  },
+  "author": "Tom Misawa <riversun.org@gmail.com> (https://github.com/riversun)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riversun/chatux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/riversun/chatux/issues"
+  },
+  "homepage": "https://github.com/riversun/chatux#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "botui": "git+https://github.com/riversun/botui.git",
+    "jsframe.js": "^1.5.16",
+    "vue": "2.6.11"
+  }
+}
